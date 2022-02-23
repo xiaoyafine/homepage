@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    background: #2e2e2c;
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+::selection {
+    color: #e0e0e0;
+    background: rgba(255,64,129,.35);
+}
+#bg {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-color: #818181;
+    background-image: url('../img/background.jpg');
+}
+#bg:after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    z-index: -1;
+    position: fixed;
+    background-color: rgba(66,66,66,.6);
+}
+
+#main {
+    padding: 20px 0;
+    height: auto;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    /*height: 100vh;*/
+    /*max-width: 1200px;*/
+    /*max-width: 90%;*/
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.logo img {
+    border-radius: 15px;
+    max-width: 220px;
+    padding-bottom: 10px;
+    width: 95%;
+}
+
+.left {
+    padding: 20px 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.left-name {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 2px;
+}
+
+.left-name2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.left-intention {
+    font-size: 18px;
+    color: white;
+    padding-bottom: 2px;
+}
+
+.bgs {
+    color: white;
+    margin-right: 10px;
+    min-width: 100px !important;
+}
+
+.bgs-left {
+    width:100%;
+    margin-top: 5px;
+}
+
+.bgs-blue {
+    border-bottom: 1.5px solid #28A9E0;
+}
+
+.bgs-blue:hover {
+    background-color: #28A9E0;
+    transition: all .3s;
+}
+
+.bgs-pink {
+    border-bottom: 1.5px solid #F9A2A8;
+}
+
+.bgs-pink:hover {
+    background-color: #F9A2A8;
+    transition: all .3s;
+}
+
+.bgs-black {
+    border-bottom: 1.5px solid #353535;
+}
+
+.bgs-black:hover {
+    background-color: #353535;
+    transition: all .3s;
+}
+
+.bgs-white {
+    border-bottom: 1.5px solid white;
+}
+
+.bgs-white:hover {
+    background-color: white;
+    color: black;
+    transition: all .3s;
+}
+
+.intr-card {
+    /*margin: 20px 0;*/
+    padding: 20px 25px;
+    /*padding-bottom:0;*/
+    background-color: rgba(66, 66, 66, .3);
+}
+
+.intr-card-title {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.intr-card-title a {
+    text-decoration: none;
+}
+
+.intr-card-part {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.intr-card-text{
+    padding:15px;
+    /*margin-bottom: 10px;*/
+}
+
+.intr-text-content{
+    color: white;
+    font-size: 18px;
+}
+
+.intr-tr {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 2px;
+    background: rgba(255,255,255,.3);
+}
+
+.intr-skill-title {
+    color: white;
+    padding-bottom: 6px;
+    padding-top: 10px;
+}
+
+.intr-card-content {
+    font-size: 17px;
+    color: white;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+#last {
+    text-align: center;
+}
+
+#last .intr-card-title {
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+#last .intr-card-content {
+    font-size: 12px;
+    letter-spacing: 1em;
+    opacity: .5;
+}
+
+.mdui-progress {
+    background-color: rgba(255, 255, 255, .2) !important;
+    height: 6px;
+    border-radius: 3px;
+    width: 90%;
+}
+
+.mdui-progress-determinate {
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 3px;
+
+}
+
+.mdui-tooltip {
+    margin-top: 20px !important;
+}
+
+@media only screen and (min-width: 420px) and (max-width: 1024px) {
+    .left-name {
+        font-size: 35px!important;
+    }
+    .left-name2 {
+        font-size: 25px!important;
+    }
+    .left-intention {
+        font-size: 20px!important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .bgs {
+        margin-bottom: 10px;
+    }
+    .logo img {
+        display:none;
+    }
+    .left-name {
+        font-size: 30px;
+    }
+    .left-name2 {
+        font-size: 20px;
+    }
+    .left-intention {
+        font-size: 15px;
+    }
+    .bgs-left {
+        width:auto;
+        /*margin-top: 5px;*/
+    }
+}
